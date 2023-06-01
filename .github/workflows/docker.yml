@@ -18,5 +18,5 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Build and export to Docker
         run: |
-          docker build -t dmathison/trade_platform:latest
+          docker build -t dmathison/trade_platform:latest .
           docker push dmathison/trade_platform:latest
